@@ -94,7 +94,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     background-color: var(--secondary-color);
-    color: var(--accent-color);
+    color: black;
+    font-weight: bold;
 }
 
 @media (max-width: 767px) {
