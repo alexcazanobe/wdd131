@@ -99,7 +99,7 @@ footer {
 
 @media (max-width: 767px) {
     #nav-menu {
-        display: none; /* Ocultar el menú por defecto */
+        display: none; 
         flex-direction: column;
         gap: 1rem;
         background-color: var(--secondary-color);
@@ -112,7 +112,7 @@ footer {
     }
 
     #hamburger {
-        display: block; /* Mostrar el botón hamburguesa */
+        display: block; 
         font-size: 2rem;
         background: none;
         border: none;
@@ -121,10 +121,10 @@ footer {
     }
 
     #hamburger.active::before {
-        content: "X"; /* Mostrar una "X" para cerrar el menú */
+        content: "X"; 
     }
 
     #nav-menu.show {
-        display: flex; /* Mostrar el menú cuando se activa */
+        display: flex; 
     }
 }
