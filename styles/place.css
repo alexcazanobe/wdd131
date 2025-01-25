@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #75aadb;
+    --secondary-color: #ffffff;
+    --accent-color: #f4c430;
+    --background-color: #f9f9f9 ;
+    --font-family: 'Lora', sans-serif;
+    --text-color: #333333;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+hr {
+    border: none;
+    border-top: 20px solid var(--accent-color);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+   
+}
+
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    
+}
+
+.card h2 {
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+
+#weather h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+#weather h2 img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr ;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .hero {
+        grid-column: span 2;
+        position: relative;
+    }
+
+    .card h2 {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 0.5rem;
+        border-radius: 4px;
+        text-align: center;
+        position: relative;
+        left: -40px;
+    }
+
+
+    #data {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 300px;
+    }
+
+    #weather {
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        width: 300px;   
+    }
+
+    #weather h2 {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
