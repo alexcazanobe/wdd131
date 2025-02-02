@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDS Temples Album</title>
+    <meta name="description" content="LDS temples album">
+    <meta name="author" content="Alex Cazanobe">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+
+        <nav id="nav-menu" class="hidden">
+            <a href="javascript:void(0)" id="home-filter">Home</a>
+            <a href="javascript:void(0)" id="old-filter">Old</a>
+            <a href="javascript:void(0)" id="new-filter">New</a>
+            <a href="javascript:void(0)" id="large-filter">Large</a>
+            <a href="javascript:void(0)" id="small-filter">Small</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <div id="temple-container" class="image-gallery">
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> - Alex Cazanobe - Argentina</p>
+        <p> Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
