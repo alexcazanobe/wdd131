@@ -7,7 +7,7 @@
     --input-background: #fff; 
     --input-border: #666; 
     --star-color: #ffd700; 
-    --star-unselected-color: #999; 
+    --star-unselected-color: #666; 
     --footer-color: #333; 
     --optional-color: #333; 
 }
