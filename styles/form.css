@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #4a90e2; 
+    --secondary-color: #357ab8; 
+    --background-color: #f5f5f5; 
+    --text-color: #333; 
+    --label-color: #4a4a4a; 
+    --input-background: #fff; 
+    --input-border: #ccc; 
+    --star-color: #ffd700; 
+    --footer-color: #888; 
+     
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--input-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: var(--label-color);
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    position: relative;
+}
+
+.rating label span {
+    font-size: 2em;
+    color: #ccc; 
+    cursor: pointer;
+}
+
+.rating input:checked + label span {
+    color: var(--star-color);
+}
+
+.rating label:hover span,
+.rating label:hover span ~ span {
+    color: var(--star-color);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.optional {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--footer-color);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; 
+    }
+
+    form {
+        padding: 10px; 
+    }
+
+    .rating {
+        flex-direction: column; 
+        align-items: start; 
+        gap: 5px; 
+    }
+
+    .features {
+        gap: 5px; 
+    }
+}
