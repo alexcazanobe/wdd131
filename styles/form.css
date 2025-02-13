@@ -1,14 +1,15 @@
 :root {
-    --primary-color: #4a90e2; 
-    --secondary-color: #357ab8; 
-    --background-color: #f5f5f5; 
-    --text-color: #333; 
-    --label-color: #4a4a4a; 
+    --primary-color: #003366; 
+    --secondary-color: #001a4d; 
+    --background-color: #f0f0f0; 
+    --text-color: #000; 
+    --label-color: #333; 
     --input-background: #fff; 
-    --input-border: #ccc; 
+    --input-border: #666; 
     --star-color: #ffd700; 
-    --footer-color: #888; 
-     
+    --star-unselected-color: #999; 
+    --footer-color: #333; 
+    --optional-color: #333; 
 }
 
 body {
@@ -17,6 +18,8 @@ body {
     margin: auto;
     background-color: var(--background-color);
     color: var(--text-color);
+    padding: 20px;
+
 }
 
 h1 {
@@ -43,6 +46,8 @@ input, select, textarea {
     border: 1px solid var(--input-border);
     border-radius: 4px;
     font-size: 1em;
+    background-color: var(--input-background);
+    color: var(--text-color);
 }
 
 input[type="submit"] {
@@ -75,7 +80,7 @@ input[type="submit"]:hover {
 
 .rating label span {
     font-size: 2em;
-    color: #ccc; 
+    color: var(--star-unselected-color); 
     cursor: pointer;
 }
 
@@ -100,15 +105,17 @@ input[type="submit"]:hover {
 }
 
 .optional {
-    color: var(--primary-color);
+    color: var(--optional-color); 
+
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: var(--background-color);
-    color: var(--footer-color);
+    color: var(--footer-color); 
 }
+
 
 @media (max-width: 600px) {
     body {
