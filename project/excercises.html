@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guitar exercises for practice">
+    <meta name="author" content="Alex Daniel Cazanobe">
+    
+    <title>Guitar Exercises</title>
+
+    <link rel="stylesheet" href="styles/learning-guitar.css">
+    <script src="scripts/Project.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" alt="Logo Guide to Learning Guitar" width="150" height="auto">
+        <h1>Guitar Exercises</h1>
+
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chords-scales.html">Chords and Scales</a></li>
+                <li><a href="excercises.html">Exercises</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="exercises-list">
+            <h2>Basic Exercises</h2>
+            <div class="exercises-row" id="basic-exercises">
+            </div>
+
+            <h2>Advanced Exercises</h2>
+            <div class="exercises-row" id="advanced-exercises">
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Request Personalized Exercises</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Request Exercises</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> - Alex Cazanobe - Argentina</p>
+        <p> Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
